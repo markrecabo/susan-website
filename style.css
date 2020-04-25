@@ -107,6 +107,16 @@ img.navbar-brand {
 
 /* ===== Main Page ====== */
 
+.navbar-nav {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 767px){
+  .navbar-nav {
+    margin: 0;
+  }
+}
+
 .col-md-10.title-slider h1 {
   font-size: calc(56px + (58 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
   font-weight: 700;
@@ -154,6 +164,8 @@ img.navbar-brand {
       top: 350;
     }  
 }
+
+
 
 
 
@@ -251,13 +263,7 @@ img.navbar-brand {
           align-items: center;
 }
 
-@media only screen and (max-width: 767px) {
-  .guts .container-fluid .row .col-md-4 {
-    border-bottom: 1px solid;
-    text-align: center;
-    margin: 1em;
-}
-}
+
 
 /* === CTA Banner Orange ==== */
 
@@ -308,6 +314,7 @@ section.cta-section {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 
 /* === Who is this program for === */
 
@@ -1037,7 +1044,7 @@ line-height: 33px;
 
 }
 
-/* === Samsung Galaxy ===*/
+/* === Samsung Galaxy Breakpoints ===*/
 
 @media only screen and (max-height: 800px) and (max-width: 400px) {
   .bg-img {
@@ -1055,4 +1062,55 @@ line-height: 33px;
 
 }
 
+/* === Ipads Breakpoints === */
+
+@media only screen and (max-width: 767px) {
+  .guts .container-fluid .row .col-md-4 {
+    border-bottom: 1px solid;
+    text-align: center;
+    margin: 1em;
+}
+
+.cta-section .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-banner span.col-md-4 button {
+  margin: 1em auto;
+  width: 80%;
+}
+
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 767px){
+  .guts .row .col-md-4 span img {
+    width: 20px;
+  }
+  .guts .row .col-md-4 h2 {
+    font-size: calc(22px + (22 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+  }
+
+  .cta-banner span.col-md-6 h3 {
+    font-size: calc(20px + (20 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-weight: 500;
+  }
+
+  .cta-banner span.col-md-4 button {
+    font-size: calc(18px + (22 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+  }
+
+  h2.heading-banner {
+    font-size: calc(18px + (22 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+  }
+
+  section.video-testimonials.container-fluid .video.row{
+    margin: 1em 0;
+  }
+
+  .footer .col-md-4 { 
+    padding: 1em 2em !important;
+  }
+}
 
