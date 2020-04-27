@@ -15,90 +15,59 @@
 </head>
 
 <body>
-    <div class="main-wrapper">
-        <header>
-            <div class="social-icons">
-                <span><a href="#"><img src="/icons/pinterest.svg" alt="pinterest icon"></a></span>
-                <span><a href="#"><img src="/icons/facebook.svg" alt="facebook icon"></a></span>
-                <span><a href="#"><img src="/icons/linkedin.svg" alt="linkedin icon"></a></span>
-                <span><a href="#"><img src="/icons/instagram.svg" alt="instagram icon"></a></span>
-            </div>
-            <nav class="navbar navbar-expand-md navbar-light">
-                <img  class="navbar-brand" src="/image/logo.svg" alt="susan glean logo.png">
-                <button class="navbar-toggler" id="navbar-harmbuger" data-toggle="collapse" data-target="#navbarMain">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarMain">
-                  <ul class="navbar-nav ml-auto">
-                 <li class="nav-item">
-                   <a href="#" class="nav-link">Home</a>
-                  </li>
-                  <li class="nav-item">
-                   <a href="#" class="nav-link">About me</a>
-                  </li>
-                  <li class="nav-item">
-                   <a href="#" target="_blank" class="nav-link">Contact me</a>
-                  </li>
-                </ul>
-                </div>
-              </nav>
-        </header>
-
-
-        <div class="about-content container-fluid">
-            <div class="profile-img col-md-10">
-                <img src="/image/susan-img.svg" alt="Susan Gleaton">
-            </div>    
-
-            <div class="about-susan col-md-10">
-                <h2>About Susan Gleaton</h2>
-                <p>Susan is a Registered Dietitian with certifications in Integrative and Functional Medical Nutrition
-                    Therapy who really understands the importance of digestive health and specializes in all types of
-                    digestive problems such as heartburn, gas, bloating, cyclic vomiting and chronic constipation or
-                    diarrhea, or perhaps alternating between the two.</p>
-                
-                    <p>Through her own struggles with lifelong constipation, gas, bloating, and a desire to help her clients,
-                    Susan discovered a method that has successfully helped many achieve digestive normalcy with her
-                    proven, evidence-based approach…even when they have had digestive problems for years.  
-                    Seeing her clients regain their health and experience normal digestion is truly a joy to Susan and
-                    keeps her propelled to tell more and more people about this under-utilized approach.
-                    Susan lives north of the Dallas/Fort Worth metroplex on a thriving, busy homestead raising grass fed
-                    cows and pastured chickens.  She loves to prepare simple and healthy meals from scratch for her
-                    family, friends, and an ever-increasing tribe of jubilant grandchildren.</p>
+    <header class="col-md-10 ml-auto mr-auto">
+        <div class="container-fluid">
+            <div class="row social-icons mr-0 ml-0">
+                <span><a href="https://www.facebook.com/SusanGleatonRD"><img src="icons/b-fb.svg" alt="pinterest icon"></a></span>
+                <span><a href="https://www.pinterest.com/susangleatonrd/"><img src="icons/b-pinterest.svg" alt="facebook icon"></a></span>
+                <span><a href="https://www.linkedin.com/in/susan-gleaton-198a1533/"><img src="icons/b-linked.svg" alt="linkedin icon"></a></span>
+                <span><a href="https://www.instagram.com/SusanGleatonRD/"><img src="icons/b-insta.svg" alt="instagram icon"></a></span>
             </div>
         </div>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <img  class="navbar-brand" src="image/logo.svg" alt="susan glean logo.png">
+                    <button class="navbar-toggler" id="navbar-harmbuger" data-toggle="collapse" data-target="#navbarMain">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarMain">
+                      <ul class="navbar-nav">
+                            <li class="nav-item">
+                                    <a href="index.html" class="nav-link" onclick="window.open('index.html', '_self');">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a href="about.html" class="nav-link" onclick="window.open('about.html', '_self');">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link" onclick="window.open('contact.html', '_self');">Contact</a>
+                            </li>
+                      </ul>
+                     </div>
+            </div>
+        </nav>
+    </header>   
+    <div class="about-content container-fluid">
+        <div class="profile-img col-md-10">
+            <img src="/image/susan-img.svg" alt="Susan Gleaton">
+        </div>    
 
-        <div class="circle-img1">
-            <svg width="861" height="1355" viewBox="0 0 861 1355" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="677.5" cy="677.5" r="490.5" transform="rotate(32.2834 677.5 677.5)" fill="url(#paint0_linear)"/>
-                <defs>
-                <linearGradient id="paint0_linear" x1="1252.5" y1="152" x2="477.5" y2="901" gradientUnits="userSpaceOnUse">
-                <stop offset="0.59375" stop-color="#E1F3FF" stop-opacity="0"/>
-                <stop offset="1" stop-color="#E4F4FF"/>
-                </linearGradient>
-                </defs>
-            </svg>        
-        </div>
-
-
-        <div class="circle-img2">
-            <svg width="481" height="907" viewBox="0 0 481 907" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="27.2192" cy="453.219" r="324.966" transform="rotate(-144.537 27.2192 453.219)" fill="url(#paint0_linear)"/>
-                <defs>
-                <linearGradient id="paint0_linear" x1="408.168" y1="105.065" x2="-105.285" y2="601.292" gradientUnits="userSpaceOnUse">
-                <stop offset="0.59375" stop-color="#E1F3FF" stop-opacity="0"/>
-                <stop offset="1" stop-color="#E4F4FF"/>
-                </linearGradient>
-                </defs>
-            </svg>
-                
-        </div>
+        <div class="about-susan col-md-10">
+            <h2>About Susan Gleaton</h2>
+            <p>Susan is a Registered Dietitian with certifications in Integrative and Functional Medical Nutrition
+                Therapy who really understands the importance of digestive health and specializes in all types of
+                digestive problems such as heartburn, gas, bloating, cyclic vomiting and chronic constipation or
+                diarrhea, or perhaps alternating between the two.</p>
             
-</div>
-
-
-
-
+                <p>Through her own struggles with lifelong constipation, gas, bloating, and a desire to help her clients,
+                Susan discovered a method that has successfully helped many achieve digestive normalcy with her
+                proven, evidence-based approach…even when they have had digestive problems for years.  
+                Seeing her clients regain their health and experience normal digestion is truly a joy to Susan and
+                keeps her propelled to tell more and more people about this under-utilized approach.
+                Susan lives north of the Dallas/Fort Worth metroplex on a thriving, busy homestead raising grass fed
+                cows and pastured chickens.  She loves to prepare simple and healthy meals from scratch for her
+                family, friends, and an ever-increasing tribe of jubilant grandchildren.</p>
+        </div>
+    </div>
 
 <!--Footer Section-->
 
@@ -108,42 +77,16 @@
             <h5>Follow susan Gleaton</h5>
             <ul>
                 <span>
-                    <a href="#">
-                        <svg width="23" height="23" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22.08 0H0.92C0.411125 0 0 0.422539 0 0.945542V22.693C0 23.216 0.411125 23.6385 0.92 23.6385H22.08C22.5889 23.6385 23 23.216 23 22.693V0.945542C23 0.422539 22.5889 0 22.08 0ZM19.4235 6.8995H17.5864C16.146 6.8995 15.8671 7.60275 15.8671 8.63693V10.9151H19.3056L18.8571 14.4816H15.8671V23.6385H12.282V14.4845H9.28337V10.9151H12.282V8.28531C12.282 5.23298 14.0961 3.56942 16.7469 3.56942C18.0176 3.56942 19.1073 3.66693 19.4264 3.71125V6.8995H19.4235Z" fill="white"/>
-                        </svg>
-                             
-                    </a>
+                    <a href="#"><img src="icons/facebook.svg" alt=""></a>
                 </span>
                 <span>
-                    <a href="#">
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5116 16.2916C14.3927 16.2916 15.848 15.6705 16.8773 14.4282C17.9066 13.1859 18.4213 11.7307 18.4213 10.0624C18.4213 8.21677 17.7292 6.62842 16.3449 5.2974C14.9606 3.96638 13.3013 3.30087 11.3669 3.30087C9.43248 3.30087 7.77315 3.96638 6.38889 5.2974C5.00463 6.62842 4.3125 8.21677 4.3125 10.0624C4.3125 11.2692 4.63194 12.3873 5.27083 13.4166C5.4838 13.807 5.80324 14.0023 6.22917 14.0023C6.54861 14.0023 6.82369 13.8869 7.0544 13.6562C7.28511 13.4255 7.40046 13.1682 7.40046 12.8842C7.40046 12.7067 7.32947 12.5115 7.1875 12.2986C6.79707 11.5887 6.60185 10.8433 6.60185 10.0624C6.60185 8.82016 7.06327 7.76422 7.98611 6.89462C8.90895 6.02502 10.027 5.59022 11.3403 5.59022C12.6535 5.59022 13.7805 6.02502 14.7211 6.89462C15.6617 7.76422 16.1319 8.82016 16.1319 10.0624C16.1319 11.1273 15.8391 12.0412 15.2535 12.8043C14.6678 13.5675 13.7539 13.949 12.5116 13.949C12.0856 13.949 11.7307 13.7982 11.4468 13.4965C11.1628 13.1948 11.0208 12.831 11.0208 12.405C11.0208 12.0856 11.1894 11.5798 11.5266 10.8877C11.8638 10.1955 12.0324 9.56553 12.0324 8.99763C12.0324 8.0038 11.4823 7.50689 10.3819 7.50689C9.88503 7.50689 9.45023 7.71098 9.07755 8.11916C8.70486 8.52734 8.51852 9.1751 8.51852 10.0624C8.51852 10.3464 8.53627 10.6303 8.57176 10.9143C8.60725 11.1982 8.64275 11.4112 8.67824 11.5532L8.73148 11.7129L6.65509 18.0486L6.60185 18.2615V18.4212C6.60185 18.7762 6.71721 19.0779 6.94792 19.3263C7.17863 19.5748 7.47145 19.699 7.82639 19.699C8.3233 19.699 8.67824 19.4861 8.8912 19.0601L8.94444 19.1134L8.99768 18.9004L10.0625 15.2268C10.7369 15.9367 11.5532 16.2916 12.5116 16.2916ZM20.4444 0.159668C21.0833 0.159668 21.6246 0.381504 22.0683 0.825177C22.512 1.26885 22.7338 1.79238 22.7338 2.39578V20.6041C22.7338 21.2075 22.512 21.731 22.0683 22.1747C21.6246 22.6184 21.0833 22.8402 20.4444 22.8402H2.28935C1.65046 22.8402 1.10918 22.6184 0.665509 22.1747C0.221836 21.731 0 21.2075 0 20.6041V2.39578C0 1.79238 0.221836 1.26885 0.665509 0.825177C1.10918 0.381504 1.65046 0.159668 2.28935 0.159668H20.4444Z" fill="white"/>
-                        </svg>
-                            
-                    </a>
+                    <a href="#"><img src="icons/pinterest.svg" alt=""></a>
                 </span>
                 <span>
-                    <a href="#">
-                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0)">
-                            <path d="M19.5931 19.601H16.1913V14.2629C16.1913 12.99 16.1647 11.3541 14.4124 11.3541C12.6385 11.3541 12.3682 12.7348 12.3682 14.1687V19.6003H8.96209V8.62428H12.2338V10.1214H12.2777C12.7348 9.25678 13.8467 8.34756 15.5056 8.34756C18.9563 8.34756 19.5967 10.6195 19.5967 13.5736V19.6003L19.5931 19.601ZM5.11391 7.12425C4.85392 7.12434 4.59646 7.07315 4.35629 6.97359C4.11612 6.87403 3.89795 6.72807 3.71427 6.54406C3.5306 6.36005 3.38503 6.14162 3.28591 5.90126C3.18679 5.66091 3.13606 5.40336 3.13662 5.14337C3.13705 4.75205 3.2535 4.36964 3.47125 4.0445C3.68899 3.71935 3.99826 3.46607 4.35995 3.31668C4.72163 3.16729 5.11949 3.12849 5.50322 3.2052C5.88695 3.28191 6.23932 3.47068 6.51578 3.74764C6.79223 4.0246 6.98036 4.37731 7.05637 4.76118C7.13239 5.14505 7.09287 5.54283 6.94282 5.90425C6.79277 6.26566 6.53893 6.57447 6.21339 6.79162C5.88785 7.00878 5.50523 7.12453 5.11391 7.12425ZM6.82022 19.601H3.40687V8.625H6.82022V19.601ZM21.3009 0H1.69625C0.759719 0 0 0.741031 0 1.65816V21.3426C0 22.2597 0.759719 23.0007 1.69625 23.0007H21.2973C22.2324 23.0007 23 22.2597 23 21.3426V1.65816C23 0.741031 22.2324 0 21.2973 0H21.3009Z" fill="white"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0">
-                            <rect width="23" height="23" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                            
-                    </a>
+                    <a href="#"><img src="icons/linkedin.svg" alt=""></a>
                 </span>
                 <span>
-                    <a href="#">
-                        <svg width="29" height="23" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25.875 0H2.875C1.29375 0 0.014375 1.32967 0.014375 2.95482L0 20.6837C0 22.3089 1.29375 23.6385 2.875 23.6385H25.875C27.4562 23.6385 28.75 22.3089 28.75 20.6837V2.95482C28.75 1.32967 27.4562 0 25.875 0ZM25.875 5.90964L14.375 13.2967L2.875 5.90964V2.95482L14.375 10.3419L25.875 2.95482V5.90964Z" fill="white"/>
-                        </svg>       
-                    </a>
+                    <a href="#"><img src="icons/instagram.svg" alt=""></a>
                 </span>
             </ul>
             <p>Consulting with clients virtually all across the United States via phone or video/chat in a secure patient portal.</p>
@@ -152,12 +95,20 @@
         <div class="col-md-4 disclaimer">
             <p style="text-align: center;">© Susan Gleaton. All rights reserved.</p>
             <p style="text-align: center;margin:0;">Disclaimer</p>
-            <p style="font-size: 8px;">The information and services provided by Susan Gleaton, RDN, LD, FLT, CLT and Susan Gleaton LLC are in no way to be used as a substitute for medical care. The information provided by this website and through my services is for educational purposes only. Individuals should seek the permission and supervision of a physician before starting any weight loss plan, diet or exercise program. All medical information should be used in consultation with your physician and other healthcare providers. Susan Gleaton LLC is not responsible for the contents or products of any or all links made from and to this site by a third party site. Susan Gleaton and Susan Gleaton LLC disclaim any liability arising directly or indirectly from the use of this web site and/or services</p>
+            <p style="font-size: 8px;">
+                The information and services provided by Susan Gleaton, RDN, LD, FLT, CLT and Susan Gleaton LLC are in no way to be used as a substitute for medical care. The information provided by this website and through my services is for educational purposes only. Individuals should seek the permission and supervision of a physician before starting any weight loss plan, diet or exercise program. All medical information should be used in consultation with your physician and other healthcare providers. Susan Gleaton LLC is not responsible for the contents or products of any or all links made from and to this site by a third party site. Susan Gleaton and Susan Gleaton LLC disclaim any liability arising directly or indirectly from the use of this web site and/or services
+            </p>
         </div>
 
         <div class="col-md-4">
-            <p>All visits with Susan Gleaton, RDN are kept in complete confidentiality.</p>
-            <p>Serving the North Texas areas of Gainesville, Denton, Sherman in Cooke, Grayson, and Denton counties</p>
+            <p>
+                All visits with Susan
+                Gleaton, RDN are kept in complete confidentiality.
+            </p>
+
+            <p>
+                Serving the North Texas areas of Gainesville, Denton, Sherman in Cooke, Grayson, and Denton counties
+            </p>
         </div>
     </div>
 </footer> 

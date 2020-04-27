@@ -666,7 +666,7 @@ section.inclusives .container-fluid .row .col-sm p {
 }
 
 section.contact-form {
-  margin-top: 4em;
+  margin: 4em 0;
 }
 
 .form {
@@ -844,7 +844,7 @@ textarea#message {
 
 .cta-blueprint button {
   padding: 1em 7em;
-  margin: auto;
+  margin: 4em auto;
   font-weight: bold;
   text-align: center;
   margin-top: 2em; 
@@ -865,12 +865,18 @@ textarea#message {
   font-size: 2em;
 }
 
+.bg-blue.bg-image {
+  background-image: url(image/bg-blueprint.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 300px center;
+}
+
 
 
 /* === Footer === */
 
 .main-footer {
-  margin-top: 2em;
   background: #224866;
   color: white;
   margin-left: 0 !important;
@@ -913,7 +919,7 @@ textarea#message {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 4em 4em;
+  padding: 4em 0;
 }
 
 .profile-img.col-md-10 {
@@ -932,6 +938,28 @@ font-style: normal;
 font-weight: normal;
 font-size: 22px;
 line-height: 33px;
+}
+
+.circle-img1 svg {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: -1;
+}
+
+.circle-img2 svg {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  top: 800px;
+}
+
+
+.about-content.container-fluid {
+  background-image: url(image/combi-img.svg);
+  background-position: bottom -700px center;
+  background-size: cover;
 }
 
 
@@ -1112,5 +1140,6 @@ line-height: 33px;
   .footer .col-md-4 { 
     padding: 1em 2em !important;
   }
+
 }
 
