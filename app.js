@@ -44,7 +44,7 @@ function validate(){
 
  // Modal 
  
-$(document).ready(function(){
+ /* $(document).ready(function(){
   $("body").one('mouseleave' , function(){
     $("#exitpop-out").show();
   });
@@ -52,4 +52,24 @@ $(document).ready(function(){
   $('.close').click(function(){
     $("#exitpop-out").hide();
   });
+
+}); */
+
+// Modal run per user session
+
+$(document).ready(function() {
+  var cookieValue = $.cookie("user-session");
+
+  if (!cookieValue || !cookieValue.length) {
+    setTimeout(function() {
+      $("body").one("mouseleave" , function(){
+        $("#exitpop-out").show();
+      });
+      $.cookie("user-session", "1");
+    }, 3000);
+
+    $(".close").click(function(){
+      $("#exitpop-out").hide();
+    });
+  }
 });
