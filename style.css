@@ -580,6 +580,11 @@ section.inclusives .container-fluid .row .col-sm img {
 section.inclusives .container-fluid .row .col-sm h2 {
   text-transform: uppercase;
 }
+
+section.inclusives .container-fluid .row .col-sm h5 {
+  text-transform: uppercase;
+}
+
 section.inclusives .container-fluid .row .col-sm p {
   text-align: center;
 }
@@ -886,6 +891,9 @@ textarea#message {
   font-weight: 300;
   
 }
+.row.footer {
+  margin: 4em 2em;
+}
 
 .footer img {
   height: 24px;
@@ -897,8 +905,16 @@ textarea#message {
           padding-inline-start: 0 !important;
 } 
 
-.footer .col-md-4 {
-  padding: 4em 4em !important;
+.footer-info p {
+  max-width: 80%;
+}
+
+.main-footer .row.footer .col-md-6 p {
+  text-align: left !important;
+}
+
+.footer-icons ul span {
+  margin-right: 1em;
 }
 
 
