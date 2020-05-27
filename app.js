@@ -8,9 +8,9 @@ function validate(){
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
     var error_message = document.getElementById("error_message");
-    
+
     error_message.style.padding = "10px";
-    
+
     var text;
     if(name.length < 5){
       text = "Please Enter valid Name";
@@ -42,8 +42,8 @@ function validate(){
   }
 
 
- // Modal 
- 
+ // Modal
+
  /* $(document).ready(function(){
   $("body").one('mouseleave' , function(){
     $("#exitpop-out").show();
@@ -72,4 +72,13 @@ $(document).ready(function() {
       $("#exitpop-out").hide();
     });
   }
+});
+
+
+// Onlick Smooth Animation Scroll to Video
+
+$("#intro-video-btn").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#intro-video").offset().top
+  }, 1000);
 });

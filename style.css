@@ -6,7 +6,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 body {
@@ -61,7 +61,7 @@ p {
   font-weight: 300;
   line-height: 1.5em;
   text-align: justify;
-  
+
 }
 
 a {
@@ -122,6 +122,19 @@ img.navbar-brand {
   font-weight: 700;
 }
 
+#intro-video-btn {
+  padding: .75em 2em;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  color: #007bff;
+}
+
+.intro-video-btn a {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
 .col-md-10.title-slider {
   position: absolute;
   top: 400;
@@ -162,11 +175,8 @@ img.navbar-brand {
 
     .col-md-10.title-slider {
       top: 350;
-    }  
+    }
 }
-
-
-
 
 
 .row.img-pinpoint img, .who-program-for.row img, .what-results.row img, section.how-does-it-work.container-fluid img, .testimonials container-fluid img, .bg-slider img {
@@ -283,11 +293,11 @@ section.cta-section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .cta-banner.row {
   display: -webkit-box;
@@ -305,7 +315,7 @@ section.cta-section {
 }
 
 .cta-banner span.col-md-4 button {
-  font-size: calc(18px + (30 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+  font-size: calc(18px + (20 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
   width: 100%;
   color: #484848;
   border: none;
@@ -360,21 +370,21 @@ h2.heading-banner {
 }
 
 .carrtos {
-    display: block; 
-    padding: 0;      
-    margin: 0;       
-    width: 100%;   
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
-.carrots li {  
+.carrots li {
   display: inline-block;
 
 }
 
 @media only screen and (max-width: 650px){
-  .carrots li {  
+  .carrots li {
     display:block !important;
-  
+
   }
 
   .carrots li span:nth-child(1) {
@@ -430,8 +440,6 @@ h2.heading-banner {
 }
 
 
-
-
 /* === what do i need sections === */
 
 .row.what-need.col-md-10.ml-auto.mr-auto .col-md-6 img {
@@ -450,7 +458,6 @@ h2.heading-banner {
       -ms-flex-align: center;
           align-items: center;
 }
-
 
 
 /* === Client/Testimonial Section ==== */
@@ -480,7 +487,7 @@ section.testimonials .container-fluid h2 {
   padding: 1em;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
- 
+
 }
 
 section.testimonials .container-fluid {
@@ -617,7 +624,7 @@ section.inclusives .container-fluid .row .col-sm p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;        
+  text-align: center;
 }
 
 .modal-body h2 {
@@ -684,7 +691,7 @@ section.contact-form {
   text-transform: uppercase;
   font-weight: 600;
 }
- 
+
 .wrapper .input_field{
   margin-bottom: 1.5em;
 }
@@ -852,7 +859,7 @@ textarea#message {
   margin: 4em auto;
   font-weight: bold;
   text-align: center;
-  margin-top: 2em; 
+  margin-top: 2em;
   background: #FFFFFF;
   -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
@@ -889,7 +896,7 @@ textarea#message {
   padding: 4em 4em;
   font-size: 14px;
   font-weight: 300;
-  
+
 }
 .row.footer {
   margin: 4em 2em;
@@ -897,13 +904,13 @@ textarea#message {
 
 .footer img {
   height: 24px;
-  
+
 }
 
 .footer .col-md-4 ul {
   -webkit-padding-start: 0 !important;
           padding-inline-start: 0 !important;
-} 
+}
 
 .footer-info p {
   max-width: 80%;
@@ -1033,17 +1040,17 @@ line-height: 33px;
    .cta-blueprint button a {
     font-size: 1em;
   }
-  
+
   .cta-blueprint button {
     padding: 1em 4em;
-  }   
+  }
 
   section.blueprint.container-fluid span {
     font-size: 1.2em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
-   
+
 }
 
 
@@ -1153,9 +1160,8 @@ line-height: 33px;
     margin: 1em 0;
   }
 
-  .footer .col-md-4 { 
+  .footer .col-md-4 {
     padding: 1em 2em !important;
   }
 
 }
-
