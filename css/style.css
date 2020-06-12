@@ -120,14 +120,20 @@ img.navbar-brand {
 .col-md-10.title-slider h1 {
   font-size: calc(56px + (58 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
   font-weight: 700;
+  margin-bottom: .25em;
 }
 
 #intro-video-btn {
-  padding: .75em 2em;
-  font-size: 2rem;
+  padding: .50em 2em;
+  font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
   font-family: 'Poppins', sans-serif;
   border: none;
   color: #007bff;
+  background-color: #FFFFFF;
+}
+
+#intro-video-btn:hover {
+  text-decoration: none !important;
 }
 
 .intro-video-btn a {
@@ -178,6 +184,34 @@ img.navbar-brand {
     }
 }
 
+
+/* === Simple fade transition / Video popout transition === */
+
+ .mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
 
 .row.img-pinpoint img, .who-program-for.row img, .what-results.row img, section.how-does-it-work.container-fluid img, .testimonials container-fluid img, .bg-slider img {
   width: 100%;

@@ -77,8 +77,20 @@ $(document).ready(function() {
 
 // Onlick Smooth Animation Scroll to Video
 
-$("#intro-video-btn").click(function() {
+/* $("#intro-video-btn").click(function() {
   $('html, body').animate({
       scrollTop: $("#intro-video").offset().top
   }, 1000);
+}); */
+
+// Pop out Video onclick
+$(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: true
+	});
 });
