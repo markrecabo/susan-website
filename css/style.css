@@ -738,7 +738,7 @@ section.contact-form {
   padding: 10px;
 }
 
-textarea#message {
+textarea#body {
   height: 10em;
 }
 
@@ -750,6 +750,7 @@ textarea#message {
   color: white;
   border: none;
   text-transform: uppercase;
+  margin-top: 1.5em;
 }
 
 .send-btn button span img {

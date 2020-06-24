@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Susan Glean, Registered Dietitian in Serving the North Texas areas of Gainesville, Denton, Sherman in Cooke, Grayson, and Denton counties </title>
 
-    <link rel="stylesheet" href="/css/style.css"> <!-- main stylesheet-->
+    <link rel="stylesheet" href="css/style.css"> <!-- main stylesheet-->
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -14,15 +14,15 @@
         <header class="col-md-10 ml-auto mr-auto">
             <div class="container-fluid">
                 <div class="row social-icons mr-0 ml-0">
-                    <span><a href="https://www.facebook.com/SusanGleatonRD"><img src="/icons/b-fb.svg" alt="pinterest icon"></a></span>
-                    <span><a href="https://www.pinterest.com/susangleatonrd/"><img src="/icons/b-pinterest.svg" alt="facebook icon"></a></span>
-                    <span><a href="https://www.linkedin.com/in/susan-gleaton-198a1533/"><img src="/icons/b-linked.svg" alt="linkedin icon"></a></span>
-                    <span><a href="https://www.instagram.com/SusanGleatonRD/"><img src="/icons/b-insta.svg" alt="instagram icon"></a></span>             
+                    <span><a href="https://www.facebook.com/SusanGleatonRD"><img src="icons/b-fb.svg" alt="pinterest icon"></a></span>
+                    <span><a href="https://www.pinterest.com/susangleatonrd/"><img src="icons/b-pinterest.svg" alt="facebook icon"></a></span>
+                    <span><a href="https://www.linkedin.com/in/susan-gleaton-198a1533/"><img src="icons/b-linked.svg" alt="linkedin icon"></a></span>
+                    <span><a href="https://www.instagram.com/SusanGleatonRD/"><img src="icons/b-insta.svg" alt="instagram icon"></a></span>             
                 </div>
             </div>
             <nav class="navbar navbar-expand-md navbar-light">
                 <div class="container-fluid">
-                    <img  class="navbar-brand" src="/image/logo.svg" alt="susan glean logo.png">
+                    <img  class="navbar-brand" src="image/logo.svg" alt="susan glean logo.png">
                         <button class="navbar-toggler" id="navbar-harmbuger" data-toggle="collapse" data-target="#navbarMain">
                                 <span class="navbar-toggler-icon"></span>
                         </button>
@@ -42,50 +42,53 @@
                 </div>
             </nav>
         </header>
-    
-    
+
+
         <Section class="contact-form container-fluid">
             <div class="row col-md-10 contact ml-auto mr-auto">
                 <div class="text">
-                    <h2>contact us</h2>
-                    <p>for your questions and other inquiries kindly contact me using the form below.</p>
+                    <h2>contact</h2>
+                    <p>For questions and other inquiries, please contact me using the form below.</p>
                     <br>
                     <h3>appointment hours</h3>
-                    <span>Monday & Wednesday : 10-5 CST</span><br>
-                    <span>Tuesday : 12-6 CST</span><br>
-                    <span>Thursday : 12-8 CST</span><br>
+                    <span>Monday & Wednesday : 10-5 Central</span><br>
+                    <span>Tuesday : 12-6 Central</span><br>
+                    <span>Thursday : 12-8 Central</span><br>
                 </div>
         
         
         
                 <div class="wrapper form col-lg-8">
-                    <div id="error_message">
-                       
-                    </div>
-                    <form action="mailto:susan@susangleatonrd.com" id="myform" onsubmit = "return validate();" method="post" enctype="text/plain">
-                      <div class="input_field">
-                        <label for="">full name</label>
-                          <input type="text" id="name">
-                      </div>
-                      <div class="input_field">
-                        <label for="">Subject</label>
-                          <input type="text"  id="subject">
-                      </div>
-                      <div class="input_field">
-                        <label for="">Email Address</label>
-                          <input type="text"  id="email">
-                      </div>
-                      <div class="input_field">
-                          <label for="">Message</label>
-                          <textarea id="message"></textarea>
-                      </div>
-                      <div class="send-btn">
-                          <button type="submit">Send Inquiries<span><img src="/icons/send.svg" alt=""></span></button>
-                      </div>
-                    </form>
-                  </div>
+                    <div id="">
+                       <h6 class="sent-notification" style="color:cadetblue;display:block;font-size:16px;padding:.5em;"></h6>
+                        <form id="myForm">                       
+                            <div class="input_field">
+                                <label>Full Name</label>
+                                <input id="name" type="text" placeholder="Enter Name">
+                            </div>
+                            
+                            <div class="input_field">
+                                <label>Email</label>
+                                <input id="email" type="text" placeholder="Enter Email">
+                            </div>
+                            
+                            <div class="input_field">
+                                <label>Subject</label>
+                                <input id="subject" type="text" placeholder=" Enter Subject">
+                            </div> 
+                            
+                            <div>
+                             <label for="">Message/Inquiries</label>
+                            <textarea id="body" rows="5" placeholder="Type Message"></textarea>
+                            </div>
+
+                            <div class="send-btn">
+                                <button type="submit" onclick="sendEmail()" value="Send An Email">Send Inquiries<span><img src="icons/send.svg" alt=""></span></button>
+                            </div>
+                          
+                            </form>
             </div>
-    
+      
         </Section>
 
 <!--Footer Section-->
@@ -94,7 +97,7 @@
     <div class="row footer">
         <div class="col-md-6">
             <div class="footer-icons" style="margin-bottom:4em;">
-                <h5>Follow susan Gleaton</h5>
+                <h5>Follow Susan Gleaton</h5>
                 <ul>
                     <span>
                         <a href="https://www.facebook.com/SusanGleatonRD"><img src="icons/facebook.svg" alt=""></a>
@@ -117,7 +120,7 @@
             <div class="footer-info">
                 <p>Consulting with clients virtually all across the United States via phone or video/chat in a secure patient portal.</p><br>
                 <p>All visits with Susan Gleaton, RDN are kept in complete confidentiality.</p><br>
-                <p>Serving the North Texas areas of Gainesville, Denton, Sherman in Cooke, Grayson, and Denton counties</p><br>
+                <p>Serving the North Texas areas of Gainesville, Denton and Sherman in Cooke, Grayson, and Denton counties</p><br>
             </div>
         </div>
 
@@ -136,9 +139,11 @@
 
 
 <!-- jQuery library -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Form Functions -->
+<script type="text/javascript" defer src="js/formhandling.js"></script>
 <!-- Main javascript file -->
-<script defer src="/js/app.js" type="text/javascript"></script>
+<script defer src="js/app.js" type="text/javascript"></script>
 <!-- Cookie Plugin -->
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <!-- Latest compiled JavaScript -->
